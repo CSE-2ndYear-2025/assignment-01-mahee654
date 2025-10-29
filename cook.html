@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cooking Recipe Finder</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  #searchSection {
+    margin-bottom: 20px;
+  }
+  #ingredientsFilter {
+    margin-top: 10px;
+  }
+  .recipe-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 600px;
+  }
+  .recipe-card img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+  <h1>Cooking Recipe Finder</h1>
+  <div id="searchSection">
+    <input type="text" id="dishInput" placeholder="Enter dish name" />
+    <button id="searchBtn">Search Recipe</button>
+  </div>
+
+  <div id="ingredientsFilter" style="display:none;">
+    <p>Check the ingredients you have:</p>
+    <div id="ingredientCheckboxes"></div>
+    <button id="filterBtn">Filter Recipes</button>
+  </div>
+
+  <div id="results"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
